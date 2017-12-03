@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>MIRS1701-UNDEF-0001 MIRS1701 HTMLリファレンス</title>
+	<link rel=stylesheet href="css/style.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/MIRS1701LIB.js"></script>
+</head>
+<body>
+
+<table>
+
+	<tr>
+		<th>名称</th>
+		<td class="title">MIRS1701ライブラリレファレンス()</td>
+	</tr>
+
+	<tr>
+		<th>番号</th>
+		<td class="title">MIRS1701-HTML-0001</td>
+	</tr>
+
+</table>
+
+<h1 class="no-numbering">目次</h1>
+<ul class="index-h1"></ul>
+
+<h1>本ドキュメントについて</h1>
+<p>
+	本ドキュメントは、MIRS1701ライブラリの使い方を記したものである。
+</p>
+
+<h1>MIRS1701ライブラリ</h1>
+<p>
+	MIRS1701ライブラリとはHTMLを円滑に記述するためのライブラリである。<br>
+	見出し番号自動生成、目次自動生成、図表番号自動生成、図表番号参照の機能を持つ。
+</p>
+
+<h2>見出し番号自動生成</h2>
+<p>
+	"no-numbering"というclass属性を持たない全てのh1, h2, h3要素の文頭に見出し番号が振られる。
+	また、id属性を付加するのでa要素などでリンクできる。<br>
+	見出し番号はh1なら「1.」、h2なら「1.2.」、h3なら「1.2.3.」、のようになる。
+	idは数字間のドットがハイフンになったものが付加される。
+</p>
+
+<h2>目次自動生成</h2>
+<p>
+	"index-h1"、"index-h2"、"index-h3"のいずれかのclass属性と、何らかのid属性を持つul要素には目次が振られる。<br>
+	index-h1の場合、全てのh1要素がリストされ、リンクが貼られる。<br>
+	index-h2またはindex-h3の場合、そのul要素の位置以降のh2またはh3要素がリストされ、リンクが貼られる。
+	上位の見出し要素が出現するとリストは打ち切られる。<br>
+	※h1以外の目次は目次ごとに個別のid属性を振らなければ目次が生成されないので注意すること。
+</p>
+
+<h2>図表番号自動生成</h2>
+<p>
+	何らかのid属性を持つfigure要素またはtable要素の直下に配置されたfigcaption要素またはcaption要素の文頭に図表番号が振られる。
+	図表番号は図と表で独立していて、図の場合は「fig.1」、表の場合は「table.2」のようにつく。<br>
+</p>
+
+<h2>図表番号参照</h2>
+<p>
+	参照したい図表のid属性値と同じ属性値のclass属性を持つ要素には対応する図表の番号が付く。
+	表示内容は図表番号自動生成機能に準じる。<br>
+	span要素を用いるのを推奨とするが、どの要素でも使用可能である。
+</p>
+
+<h2>idとclass</h2>
+<p>
+	id属性やclass属性は単体では意味を成さないが、スクリプトやCSSで特定の要素のみを扱う際にid属性やclass属性が付加されていると便利である。<br>
+	class属性は特に制限なく使用できるが、id属性は属性値の重複ができないため、同じ属性値を複数の要素で使用してはいけない。
+</p>
+
+<table id="tb-test" class="tsv src-test.tsv">
+	<caption>テスト表</caption>
+</table>
+
+</body>

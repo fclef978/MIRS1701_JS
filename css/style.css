@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 1em 2em;
+    max-width: 1366px;
+    line-height: 1.4;
+    color: #222222;
+    background-color: #eeeeee;
+}
+h1 {
+    border-bottom: medium solid #222222;
+}
+h2 {
+    border-bottom: thin solid #222222;
+}
+h3 {
+    border-bottom: thin solid #999999;
+}
+p {
+    margin: 1.5em 0;
+    line-height: 150%;
+    letter-spacing: 1.1px;
+}
+hr {
+    margin: 2em 0;
+    border: none;
+    border-top: thin solid #999999;
+    width: 100%;
+}
+figure {
+    margin: 2em auto;
+    text-align: center;
+}
+table {
+    margin: 2em auto;
+    width: 90%;
+    border-collapse: collapse;
+    border: thin solid #999999;
+    font-size: 100%;
+}
+table caption {
+    text-align: center;
+}
+table td,
+table th {
+    border: thin solid #999999;
+    padding: 4px 6px;
+}
+table td.title,
+table th.title {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+}
+table th {
+    background: #dddddd;
+    text-align: center;
+    white-space: nowrap;
+    color: #666666;
+}
+#to-page-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+button {
+    background: #666666;
+    font-family: Arial;
+    color: #eeeeee;
+    font-size: 1.2em;
+    padding: 1em;
+    text-decoration: none;
+}
+button:hover {
+    background: #999999;
+    text-decoration: none;
+}
+button:active {
+    background: #444444;
+    text-decoration: none;
+}
+.src {
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    width: 90%;
+    color: #eeeeee;
+    background-color: #444444;
+}
+footer {
+    margin: 2em auto 0;
+    border-top: solid thin #222222;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
